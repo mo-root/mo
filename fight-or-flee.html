@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body >
+
+  <link rel="stylesheet" type="text/css" href="selection-red.css">
+<script>
+  function fightDeath() {
+      console.log("playing death scene - fight");
+
+      $("#music").animate({volume: 0}, 1000); //fade out music
+      setTimeout($("#main").fadeOut().load('deaths/fight.html').hide().fadeIn(), 5000); //fade out screen
+  }
+</script>
+    <button id="choice_l" class="choice" type="button" onclick="fightDeath()"> FIGHT</button>
+    <button id="choice_r" class="choice" type="button"> FLEE</button>
+
+
+
+
+
+  </body>
+</html>

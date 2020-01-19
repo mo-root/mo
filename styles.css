@@ -3,7 +3,7 @@ body{
   background-color: #000000
 }
 #start {
-  font-family: StarJediHollow;
+  font-family: StarJediHollow, serif;
 
   width: 290px ;
   height: 140px;
@@ -41,3 +41,14 @@ body{
   font-family: "StarJediHollow";
   src: url("fonts/StarJediHollow.woff");
 }
+
+#skip{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+

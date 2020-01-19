@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="styles.css">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="utf-8">
     <title></title>
-    <script src="full-screen.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="sketch.js" charset="utf-8"></script>
 
-  </head>
+</head>
 
-  <body>
+<body>
+<audio id="music" loop="loop">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
 
+<div id="main">
     <video id="Video" poster=1.png>
-    <source src="clip.mp4" type="video/mp4">
+        <source src="clip.mp4" type="video/mp4">
     </video>
 
-    <button type="button" name="button" onclick="start()" id="start">start</button>
+    <button type="button" name="start" onclick="start()" id="start">start</button>
+    <button type="button" name="skip" id="skip" onclick="myHandler()">skip</button>
     <script type='text/javascript'>
-    document.getElementById('Video').addEventListener('ended',myHandler,false);
-    function myHandler(e) {
-      console.log("done");
-    window.location.replace(window.location.href+"/fight-or-flee");
-    }
-    </script>
+        document.getElementById('Video').addEventListener('ended', myHandler, false);
 
-  </body>
+        function myHandler(e) {
+            console.log("done");
+            let audio_e = document.getElementById("music");
+            audio_e.volume = 0.6;
+            audio_e.play();
+            $("#main").fadeOut().load('fight-or-flee.html').hide().fadeIn(); //fade out screen
+
+        }
+    </script>
+</div>
+
+
+
+
+
+</body>
 </html>

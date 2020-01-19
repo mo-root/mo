@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<video autoplay id="Video" poster=1.png>
+    <source src="deaths/fight.mp4" type="video/mp4">
+</video>
+
+<script type='text/javascript'>
+    document.getElementById('Video').addEventListener('ended', myHandler, false);
+
+    function myHandler(e) {
+        console.log("done");
+        let audio_e = document.getElementById("music");
+        $("#music").animate({volume: 0.6}, 1000); //fade in music
+        $("#main").fadeOut().load('fight-or-flee.html').hide().fadeIn() //fade out screen
+
+    }
+</script>
+</body>
+</html>

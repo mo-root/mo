@@ -1,0 +1,28 @@
+
+.choice{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    transition: 0.4s background-color;
+    top: 0;
+    border: none;
+    outline:none;
+    font-size: 190px;
+    font-family: din,    serif;
+}
+#choice_l{
+    left: 0;
+}
+#choice_r{
+    right: 0;
+}
+.choice:hover{
+    background-color: #C90003;
+}
+
+@font-face {
+    font-family: "din";
+    src: url("fonts/D-DIN.woff2");
+    src: url("fonts/D-DIN.woff");
+}
