@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <body >
+
+  <link rel="stylesheet" type="text/css" href="selection-red.css">
+<script>
+  function han() {
+      console.log("moving to han storyline");
+      $("#main").fadeOut().load('bounty.html?b=HAN%20SOLO').hide().fadeIn(); //fade out screen
+  }
+
+  function lando() {
+      console.log('moving to lando storyline')
+      $("#main").fadeOut().load('bounty.html?b=LANDO%20CALRISSIAN').hide().fadeIn() //fade out screen
+  }
+</script>
+    <button id="choice_l" class="choice" type="button" onclick="han()">JOIN <br />HAN SOLO</button>
+    <button id="choice_r" class="choice" type="button" onclick="lando()"> JOIN <br />LANDO CALRISSIAN</button>
+
+
+
+
+
+  </body>
+</html>

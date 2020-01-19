@@ -1,0 +1,13 @@
+#msg{
+    font-size: 120px;
+    font-family: din, serif;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "din";
+    src: url("fonts/D-DIN.woff2");
+    src: url("fonts/D-DIN.woff");
+}
