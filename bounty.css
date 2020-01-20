@@ -1,9 +1,12 @@
-#msg{
-    font-size: 120px;
-    font-family: din, serif;
-    position: absolute;
-    right: 50%;
+#center{
     text-align: center;
+}
+
+#msg {
+    position: absolute;
+    top:0;
+    font-size: 70px;
+    font-family: din, serif;
 }
 
 @font-face {

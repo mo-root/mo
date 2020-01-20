@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="bounty.css">
-
-<p id="msg"></p>
+<script>
+    function rebellion(){
+        console.log("moving to rebellion storyline");
+        $("#main").fadeOut().load('pilot-or-jedi').hide().fadeIn() //fade out screen
+    }
+</script>
+<div id="center">
+    <p id="msg"></p>
+    <button onclick="rebellion()">CONTINUE</button>
+</div>
 
 <body>
 <script>
-    var urlParams = new URLSearchParams(window.location.search);
-    document.getElementById("msg").innerText = urlParams.get("b")+ " HAS JOINED THE REBELLION"
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById("msg").innerText = urlParams.get("b")+ " HAS JOINED THE REBELLION";
+
 </script>
 </body>
 </html>
