@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body >
+
+  <link rel="stylesheet" type="text/css" href="selection-black.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+ function fightDeath() {
+      console.log("playing asdadasda scene - fight");
+
+      $("#main").fadeOut().load('jedi.html').hide().fadeIn()
+      window.open('jedi.html');
+   }
+function pr(){
+	let x = Math.random() * 101;
+	if(x>30){
+		fightDeath();
+	}
+	else{
+	      $("#main").fadeOut().load('jedi.html').hide().fadeIn()
+      window.open('deaths/fight.html');
+   }	
+	}
+
+  
+</script>
+    <button id="choice_l" class="choice" type="button" onclick="pr()">Han Solo</button>
+    <button id="choice_r" class="choice" type="button" onclick="pr()"> lando clarissian
+</button>
+
+
+
+
+
+  </body>
+</html>
