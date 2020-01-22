@@ -12,13 +12,15 @@
 
 <body>
 	
-
+<audio id="mu" loop="loop">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
 
 	<section class="the-demo">
 		<div class="example-item">
 			<div class="lightsaber">
 				<label for="yoda-example"></label>
-				<input type="checkbox" id="yoda-example" onclick="a()">
+				<input type="checkbox" id="yoda-example" onclick="a()" onclick="sounds()">
 				<div class="switch"></div>
 				<div class="plasma yoda"></div>
 			</div>
@@ -27,7 +29,7 @@
 		<div class="example-item">
 			<div class="lightsaber">
 				<label for="darth-vader-example"></label>
-				<input type="checkbox" id="darth-vader-example">
+				<input type="checkbox" id="darth-vader-example" onclick="sounds()">
 				<div class="switch"></div>
 				<div class="plasma vader"></div>
 			</div>
@@ -36,7 +38,7 @@
 		<div class="example-item">
 			<div class="lightsaber">
 				<label for="Inbar-example"></label>
-				<input type="checkbox" id="Inbar-example">
+				<input type="checkbox" id="Inbar-example" onclick="sounds()">
 				<div class="switch"></div>
 				<div class="plasma Inbar"></div>
 			</div>
@@ -45,7 +47,7 @@
 		<div class="example-item clearfix">
 			<div class="lightsaber">
 				<label for="Moin-example"></label>
-				<input type="checkbox" id="Moin-example">
+				<input type="checkbox" id="Moin-example" onclick="sounds()" >
 				<div class="switch"></div>
 				<div class="plasma Moin"></div>
 			</div>
@@ -91,7 +93,10 @@ console.log('asd')
 
 	// body...
 }
-
+function sounds(){
+let audio= document.getElementById("mu");
+            audio.volume = 0.8;
+            audio.play();	
 
 
 </script>
